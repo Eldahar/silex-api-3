@@ -7,7 +7,7 @@ $app = new Silex\Application();
 
 // ... definitions
 $app->get('/api/third', function() {
-    return new \Symfony\Component\HttpFoundation\Response('Third api response!');
+    return new \Symfony\Component\HttpFoundation\JsonResponse(['Third api response!']);
 });
 
 $app->run();
